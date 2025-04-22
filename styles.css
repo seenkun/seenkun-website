@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #071630; /* Background color similar to the image */
+}
+
+.retro-text {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px; /* You can adjust the size as needed */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    gap: 10px; /* Adds some space between text and the GIF */
+}
+
+.logo h1 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    color: #F5BD02;
+}
+
+.cat-gif {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10px; /* Space between text and GIF */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    width: 100%; /* You can adjust this as needed */
+    max-width: 1000px; /* Or any other value to limit the width */
+    margin: 0 auto; /* Center the navbar */
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ccc;
+}
+
+.content-container {
+    width: 100%;
+    max-width: 1000px; /* Match this to the navbar's width */
+    margin: 20px auto; /* Center and add some margin */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white; /* Text color */
+    padding: 20px;
+    border-radius: 10px; /* Optional: round the corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for depth */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    .logo {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .logo h1 {
+      font-size: 1.2rem;
+    }
+  
+    .cat-gif {
+      width: 40px;
+    }
+  
+    .navbar {
+      flex-wrap: wrap;
+      padding: 10px;
+      gap: 10px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .nav-links a {
+      font-size: 1rem;
+    }
+  
+    .content-container {
+      padding: 10px;
+      font-size: 0.95rem;
+    }
+  }
+  
